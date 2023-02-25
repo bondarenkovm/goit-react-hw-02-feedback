@@ -8,12 +8,13 @@ export const List = styled.ul`
   gap: 15px;
 `;
 export const Button = styled.button`
-  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 15px;
   border: none;
   color: #fff;
+  cursor: pointer;
+  transition: 250ms;
   background-color: ${({ id }) => {
     switch (id) {
       case 'good':
@@ -27,9 +28,10 @@ export const Button = styled.button`
     }
   }};
   &:hover {
-    scale: 1.1;
+    scale: 1.05;
   }
   &:active {
-    scale: 0.9;
+    scale: 0.95;
+    background-color: blue;
   }
 `;
